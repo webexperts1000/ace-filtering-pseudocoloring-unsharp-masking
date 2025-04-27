@@ -3,7 +3,20 @@ import cv2
 import numpy as np
 from PIL import Image
 
-st.set_page_config(page_title="Digital Image Processing App - (for ace filtering, or pseudocoloring, or unsharp masking)", layout="wide")
+st.set_page_config(
+    page_title="Digital Image Processing App - (for ace filtering, or pseudocoloring, or unsharp masking)",
+    page_icon="🔍",
+    layout="wide"
+)
+
+# SEO + Google verification meta tags
+st.markdown("""
+<meta name="google-site-verification" content="QH-IFyRt1ZYgcnCCvz49DtdcfJjxExWREmciNFM1M0A" />
+<meta name="description" content="An image processing tool for ACE filtering, pseudocoloring, and unsharp masking using Streamlit.">
+<meta name="keywords" content="image processing, ACE filtering, pseudocoloring, unsharp masking, Streamlit">
+<meta name="robots" content="index, follow">
+""", unsafe_allow_html=True)
+
 
 
 if 'original_image' not in st.session_state:
@@ -163,14 +176,3 @@ if st.button("Clear All"):
 
 
 
-st.set_page_config(
-    page_title="ACE Filtering, Pseudocoloring & Unsharp Masking App",
-    page_icon="🔍",
-    layout="wide"
-)
-
-st.markdown("""
-<meta name="description" content="An image processing tool for ACE filtering, pseudocoloring, and unsharp masking using Streamlit.">
-<meta name="keywords" content="image processing, ACE filtering, pseudocoloring, unsharp masking, Streamlit">
-<meta name="robots" content="index, follow">
-""", unsafe_allow_html=True)
