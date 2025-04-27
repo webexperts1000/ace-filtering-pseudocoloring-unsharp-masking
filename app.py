@@ -160,3 +160,17 @@ if st.session_state.processed_image is not None:
 # Clear button
 if st.button("Clear All"):
     clear_all()
+
+
+
+st.set_page_config(
+    page_title="ACE Filtering, Pseudocoloring & Unsharp Masking App",
+    page_icon="🔍",
+    layout="wide"
+)
+
+st.markdown("""
+<meta name="description" content="An image processing tool for ACE filtering, pseudocoloring, and unsharp masking using Streamlit.">
+<meta name="keywords" content="image processing, ACE filtering, pseudocoloring, unsharp masking, Streamlit">
+<meta name="robots" content="index, follow">
+""", unsafe_allow_html=True)
