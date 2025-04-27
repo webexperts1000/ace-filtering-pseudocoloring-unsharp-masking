@@ -3,7 +3,7 @@ import cv2
 import numpy as np
 from PIL import Image
 
-st.set_page_config(page_title="Image Processing App", layout="wide")
+st.set_page_config(page_title="Digital Image Processing App - (for ace filtering, or pseudocoloring, or unsharp masking)", layout="wide")
 
 
 if 'original_image' not in st.session_state:
