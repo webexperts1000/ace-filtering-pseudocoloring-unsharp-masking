@@ -116,7 +116,7 @@ def clear_all():
     st.rerun()
 
 # Layout
-st.title("🖼️ Image Processing App")
+st.title("🖼️ Digital Image Processing App - (for ace filtering, or pseudocoloring, or unsharp masking)")
 
 uploaded_file = st.file_uploader("Upload an Image", type=["png", "jpg", "jpeg", "bmp"])
 if uploaded_file is not None:
